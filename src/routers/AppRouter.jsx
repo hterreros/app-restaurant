@@ -10,7 +10,7 @@ import Reservations from '../pages/Reservations'
 
 const AppRouter = () => {
   return (
-    <Router>
+    <Router  basename='/app-restaurant/'>
     <NavBar />
     <Routes>
      <Route path='/' element={<Homepage />} />   
