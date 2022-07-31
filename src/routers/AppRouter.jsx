@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
 import AboutUs from '../pages/AboutUs'
@@ -8,18 +8,17 @@ import Contact from '../pages/Contact'
 import Homepage from '../pages/HomePage'
 import Reservations from '../pages/Reservations'
 
-//  const
-function AppRouter () {//= () => {
+const AppRouter = () => {
   return (
     <Router  basename='/app-restaurant/'>
     <NavBar />
-    <Switch>
+    <Routes>
      <Route path='/' element={<Homepage />} />   
      <Route path='/nosotros' element={<AboutUs />} />
      <Route path='/reservas' element={<Reservations />} />  
      <Route path='/contacto' element={<Contact />} />
      <Route path='/blog' element={<Blog />} />
-    </Switch>
+    </Routes>
     <Footer />
     </Router>
   )
