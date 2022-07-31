@@ -12,13 +12,13 @@ const AppRouter = () => {
   return (
     <Router  basename='/app-restaurant/'>
     <NavBar />
-    <Routes>
+    <Switch>
      <Route path='/' element={<Homepage />} />   
      <Route path='/nosotros' element={<AboutUs />} />
      <Route path='/reservas' element={<Reservations />} />  
      <Route path='/contacto' element={<Contact />} />
      <Route path='/blog' element={<Blog />} />
-    </Routes>
+    </Switch>
     <Footer />
     </Router>
   )
