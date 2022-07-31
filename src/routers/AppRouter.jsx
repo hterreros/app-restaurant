@@ -8,7 +8,8 @@ import Contact from '../pages/Contact'
 import Homepage from '../pages/HomePage'
 import Reservations from '../pages/Reservations'
 
-const AppRouter = () => {
+//  const
+function AppRouter () {//= () => {
   return (
     <Router  basename='/app-restaurant/'>
     <NavBar />
@@ -24,4 +25,4 @@ const AppRouter = () => {
   )
 }
 
-export default AppRouter
+ export default AppRouter
